@@ -1,6 +1,9 @@
 permutations = {}
 
-(2..12).each { |number| permutations[number] = 0 }
+(2..12).each do |number|
+   permutations[number] = 0
+  #  permutations.merge({number => 0})
+end
 
 (1..6).each do |die1|
   (1..6).each do |die2|
