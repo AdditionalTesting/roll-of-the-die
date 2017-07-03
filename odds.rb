@@ -5,6 +5,8 @@ permutations = {}
 
 end
 
+
+
 (1..6).each do |num1|
   (1..6).each do |num2|
     permutations[num1 + num2] += 1
@@ -13,5 +15,5 @@ end
 
 
 permutations.each do |key, value|
-  puts " #{key} orrcurs #{value} times."
+  puts " The odds of #{key} coming up are #{value.to_f / 36 * 100} %"
 end
